@@ -1,3 +1,39 @@
-/*
- * Estilos de tu proyecto
- */
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
+nav{
+	width: 1220px;
+	height: 106px;
+	background-color: #2D3E4F;
+}
+
+h1{
+	color: white;
+	font-family: 'Montserrat Alternates', sans-serif;
+	margin-left: 72px;
+	padding-top: 35px;	
+}
+
+ul li{
+	display: block; 
+	color: white;
+	font-family:'Montserrat Alternates', sans-serif;
+	float: right;
+	padding-left: 10px;
+	padding-bottom: 50px;	
+	}
+
+header{
+	width: 1220px;
+	height: 683px;
+	background-color: #28BB9C;
+}
+
+.start img{
+	padding-left: 230px;
+	margin-left: 230px;
+
+
+}
