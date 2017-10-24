@@ -1,39 +1,105 @@
+/* selector universal para resetear la página */
 *{
 	margin: 0px;
 	padding: 0px;
+	display: inherit;
+
 }
 
+.container {
+  width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 14px;
+  padding-right: 14px;
+  padding-top: 100px;
+  text-align: center;
+}
+
+.centrado {
+	margin: 0 auto;
+}
+
+.white-text-monse{
+	color: white;
+	font-size: 60px;
+	font-family: 'Montserrat', sans-serif;
+	text-transform: uppercase;
+}
+
+.white-lato{
+	color: white;
+	font-size: 28px;
+	font-family: 'Lato', sans-serif;
+}
+
+.blue-monse{
+	color: #222529;
+	font-size: 60px;
+	font-family: 'Montserrat', sans-serif;
+}
+
+/* Barra de Navegación */
 nav{
-	width: 1220px;
-	height: 106px;
 	background-color: #2D3E4F;
+	height: 106px;
+	width: 100%;
 }
 
-h1{
+/* Titulo Nav (seria como el Logo de la página) */
+.logo{
+	max-width: 380px;
+	height: 100px;
+	display: inline-block;
+}
+nav h1{
 	color: white;
 	font-family: 'Montserrat Alternates', sans-serif;
 	margin-left: 72px;
-	padding-top: 35px;	
+	padding-top: 35px;
+}
+/* Menú */
+ul{
+	float: right;
+	margin-right: 61px;
 }
 
 ul li{
-	display: block; 
 	color: white;
+	display: block; 
 	font-family:'Montserrat Alternates', sans-serif;
 	float: right;
-	padding-left: 10px;
-	padding-bottom: 50px;	
-	}
+	padding-top: 40px;
+	padding-left: 30px;	
+}
 
-header{
-	width: 1220px;
+/* Primera parte Section Start */
+#start{
 	height: 683px;
 	background-color: #28BB9C;
+}	
+
+#start i{
+	color: white;
+	font-size: 36px;
 }
 
-.start img{
-	padding-left: 230px;
-	margin-left: 230px;
-
+#portfolio{
+	padding-left: 55px;
+	padding-right: 56px;
+	text-align: center;
 
 }
+
+#portfolio a img{
+	width: 350px;
+	height: 250px;
+	display: inline-block;
+	float: left;
+	padding: 10px;
+}
+
+#portfolio i{
+	font-size: 36px ;
+}
+
