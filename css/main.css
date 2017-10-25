@@ -1,13 +1,18 @@
 /* selector universal para resetear la página */
-*{
+* {
 	margin: 0px;
 	padding: 0px;
 	display: inherit;
-
+	box-sizing: border-box;
+}
+/* Se definio el estilo a esta etiqueta ya que aparecia en el html */
+title {
+	display: none;
 }
 
+/* selector container, para aplicar a los div */
 .container {
-  width: 1200px;
+  width: 100%;
   margin-right: auto;
   margin-left: auto;
   padding-left: 14px;
@@ -15,56 +20,56 @@
   padding-top: 100px;
   text-align: center;
 }
-
+/* centrar imagen de Start */
 .centrado {
 	margin: 0 auto;
 }
-
-.white-text-monse{
+/* selector para tipografia (tamaño, color y tipo) */
+.white-text-monse {
 	color: white;
 	font-size: 60px;
 	font-family: 'Montserrat', sans-serif;
 	text-transform: uppercase;
 }
-
-.white-lato{
+/* selector para tipografia (tamaño, color y tipo) */
+.white-lato {
 	color: white;
 	font-size: 28px;
 	font-family: 'Lato', sans-serif;
 }
-
-.blue-monse{
+/* selector para tipografia (tamaño, color y tipo) */
+.blue-monse {
 	color: #222529;
-	font-size: 60px;
+	font-size: 48px;
 	font-family: 'Montserrat', sans-serif;
 }
 
 /* Barra de Navegación */
-nav{
+nav {
 	background-color: #2D3E4F;
 	height: 106px;
 	width: 100%;
 }
 
 /* Titulo Nav (seria como el Logo de la página) */
-.logo{
+.logo {
 	max-width: 380px;
 	height: 100px;
 	display: inline-block;
 }
-nav h1{
+nav h1 {
 	color: white;
 	font-family: 'Montserrat Alternates', sans-serif;
 	margin-left: 72px;
 	padding-top: 35px;
 }
 /* Menú */
-ul{
+ul {
 	float: right;
 	margin-right: 61px;
 }
 
-ul li{
+ul li {
 	color: white;
 	display: block; 
 	font-family:'Montserrat Alternates', sans-serif;
@@ -74,32 +79,242 @@ ul li{
 }
 
 /* Primera parte Section Start */
-#start{
+#start {
 	height: 683px;
 	background-color: #28BB9C;
 }	
 
-#start i{
+#start i {
 	color: white;
 	font-size: 36px;
 }
 
-#portfolio{
+#portfolio .container {
+	height: 850px;
 	padding-left: 55px;
 	padding-right: 56px;
 	text-align: center;
 
 }
 
-#portfolio a img{
+#portfolio a img {
 	width: 350px;
 	height: 250px;
 	display: inline-block;
 	float: left;
 	padding: 10px;
+	margin: 5px;
 }
 
-#portfolio i{
+#portfolio i {
 	font-size: 36px ;
 }
 
+#column{
+	height: 500px;
+	background-color: #28BB9C;
+	padding-top: 100px;
+}
+
+.about {
+	max-width: 700px;
+	margin: 0 auto;
+}
+
+.about h1 {
+	margin-bottom: 15px;
+	text-align: center
+}
+
+#column {
+	text-align: center;
+}
+.left {
+	display: inline;
+	float: left;
+	max-width: 345px;
+}
+
+.right {
+	display: inline;
+	float: right;
+	max-width: 345px;
+} 
+
+.cuadrado {
+	margin-bottom: 20px;
+	clear: both;
+}
+
+p.left , p.right {
+	font-family: 'Lato', sans-serif;
+	font-size: 20px;
+	font-weight: 400;
+	line-height: 1.5;
+	color: white;
+	text-align: left;
+}
+
+
+.boton {
+	width: 180px;
+	height: 50px;
+	padding: 10px;
+	border: 1px solid white;
+	display: inline-block;
+	align-content: center;
+	margin-top: 20px;
+	border-radius: 5px;	
+}
+
+.boton a {
+	margin-top: 5px;
+	font-family: 'Lato', sans-serif;
+	font-size: 15px;
+	font-weight: 400;
+	color: white;
+}
+
+.fa-download {
+	color: white;
+	font-size: 15px;
+}
+
+.fa-star {
+	color: white;
+	font-size: 26px;
+}
+
+.line1 {
+	width: 103px;
+	height: 5px;
+	display: inline-block;
+	background: #fff;	
+}
+
+.line2 {
+	width: 103px;
+	height: 5px;
+	display: inline-block;
+	background: #fff;
+}
+
+#date {
+	width: 100%;
+	height: 570px;
+	margin-bottom: 80px;
+}
+.titular {
+	
+	text-transform: uppercase;
+	margin-top: 112px;
+	text-align: center;
+}
+
+/* .form * {
+	margin: 0 auto;
+	width: 100%;
+	display: inline;
+}
+
+.form {
+	width: 400px;
+    margin-top: 20px;
+	margin-left: auto;
+    margin-right: auto;
+    line-height: 3;
+} */
+
+form {
+	margin: 0 auto;
+	float: left;
+	margin-left: 280px;
+	margin-top: 30px;
+}
+
+
+#name, #email, #phone, #message {
+	height: 50px;
+	border:none;
+	color: #C1BDBD;
+	font-weight: bold;
+	vertical-align: top;	
+	border-bottom: 1px solid #E4E1E1;
+	font-family: 'Lato', sans-serif;
+	font-size: 24px;
+	
+}
+
+#name::placeholder, #email::placeholder, #phone::placeholder, #message::placeholder {
+	color: #C1BDBD;
+	font-weight: bold;
+	vertical-align: top;
+}
+
+#button {
+	max-width: 20%;
+	color: white;
+	font-weight: bold;
+	background-color: #23DC90;
+	border: none;
+	padding: 3px;
+	border-radius: 4px;
+}
+
+
+footer {
+	width: 100%;
+	height: 342px;
+	background-color: #2D3E4F;
+	color: white;
+}
+
+.footer-column1 {
+	width: 220px;
+	height: 112px;
+	display: inline-block;
+	line-height: 1.5;
+	margin-top: 60px;
+    margin-left: 156px;
+    text-align: center;
+}
+
+.footer-column1 h3 {
+	font-family: 'Montserrat Alternates', sans-serif;
+	font-size: 28px;
+	margin-bottom: 44px;
+}
+
+.footer-column1 p {
+	font-family: 'Lato', sans-serif;
+	font-size: 20px;
+}
+
+.footer-column2 {
+	width: 350px;
+	height: 127px;
+	font-family: 'Montserrat Alternates', sans-serif;
+	font-size: 15px;
+	text-align: center;
+	display: inline-block;
+}
+
+.footer-column2 h3{
+	font-family: 'Montserrat Alternates', sans-serif;
+	font-size: 28px;
+	margin-bottom: 70px;
+	margin-top: 60px;
+}
+
+ .rrss {
+ 	margin-bottom: 40px;
+ }
+
+.footer-column3 {
+	width: 350px;
+	height: 127px;
+	font-family: 'Lato', sans-serif;
+	font-size: 20px;
+	text-align: center;
+	display: inline-block;
+}

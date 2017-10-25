@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Freelancer</title>
-	<link href="https://fonts.googleapis.com/css?family=Lato:300|Montserrat:700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400|Montserrat:700" rel="stylesheet">
 	<link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
 	<link rel="stylesheet" href="css/main.css">
 </head>
@@ -48,26 +48,103 @@
 		</div>
 </section>
 
-<!-- Section About -->
-	<div class="column">
-		<h1>About</h1>
-			<p>freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional LESS stylesheets for easy customization.
-			Whether you're a student looking to showcase your work, a professional looking to attract clients, or a graphic artist looking to share your projects, this template is the perfect starting point!</p>
-		<h4>Download Theme</h4>
 
+<!-- Section About -->
+<section id="column">
+	<div class="about">
+		<h1 class="white-text-monse">About</h1>
+		<div class="stars"><hr class="line1"><i class="fa fa-star" aria-hidden="true"></i><hr class="line2"></div>
+			<div class="cuadrado">
+				<p class="left">Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional LESS stylesheets for easy customization.</p>
+				<p class="right">Whether you're a student looking to showcase your work, a professional looking to attract clients, or a graphic artist looking to share your projects, this template is the perfect starting point!</p>
+			</div>
+			
+			<div class="boton">
+				<i class="fa fa-download"  aria-hidden="false"></i>
+				<a href="#">Download Theme</a>
+			</div>
 	</div>
+</section>
 
 <!-- Contatos -->
-	<div>
-		<h1>Contac</h1>
+<section id="date">
+	
+	<div class="titular">
+		<h1 class="blue-monse">Contact Me</h1>
+	</div>
+	<div class="stars"><hr class="line1"><i class="fa fa-star" aria-hidden="true"></i><hr class="line2"></div>
+	
+	<div id="form">
+		<form>
+			<input type="text" name="name" id="name" placeholder="Name">
+			<input type="text" name="email" id="email" placeholder="Email Address">
+			<input type="text" id="phone" name="phone" placeholder="Phone Number">
+			<textarea id="message" name="message" placeholder="Message"></textarea>
 
+			<input type="button" id="button" value="Send">
+		</form>
+	</div>
+</section>
+		
+<!-- pie de pagina con direccion y rrss -->
+<footer>
+	<!-- dirección -->
+	<div class="footer-column1">
+		<h3>Location</h3>
+		<br>
+		<p>
+			3481 Melrose Place
+			<br>
+				Beverly Hills, CA 90210
+		</p>
 	</div>
 
-		</section>
+<!-- Redes sociales -->
+<div class="footer-column2">
+		<h3>Around the Web</h3>
+	<div class="rrss">
+		<div class="fb">	
+			<span class="fa-stack fa-2x">
+		  		<i class="fa fa-circle-thin fa-stack-2x"></i>
+	  			<i class="fa fa-facebook fa-stack-1x"></i>
+		</div>
+			
+		<div class="gp">
+			<span class="fa-stack fa-2x">
+		  		<i class="fa fa-circle-thin fa-stack-2x"></i>
 
-	<footer>
+	  			<i class="fa fa-google-plus fa-stack-1x"></i>
+	 	</div>
+	 		
+		<div class="tw">
+	 		<span class="fa-stack fa-2x">
+		  		<i class="fa fa-circle-thin fa-stack-2x"></i>
+	  			<i class="fa fa-twitter fa-stack-1x"></i>
+		</div>
 		
-	</footer>
+		<div class="lk">
+	 		<span class="fa-stack fa-2x">
+		  		<i class="fa fa-circle-thin fa-stack-2x"></i>
+	  			<i class="fa fa-linkedin fa-stack-1x"></i>
+		</div>
+
+		<div class="db">
+			<span class="fa-stack fa-2x">
+		  		<i class="fa fa-circle-thin fa-stack-2x"></i>
+	  			<i class="fa fa-dribbble fa-stack-1x"></i>
+		</div>
+
+	</div>	
+</div>
+
+<!-- descripcion del framework-->
+	<div class="footer-column3">	
+		<h3>About Freelancer</h3>
+		<p>Freelance is a free to use, open source 
+		Bootstrap theme created by Start Bootstrap.</p>
+	</div> 
+		
+</footer>
 
 </body>
 </html>
