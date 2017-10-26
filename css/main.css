@@ -53,28 +53,34 @@ nav {
 
 /* Titulo Nav (seria como el Logo de la página) */
 .logo {
-	max-width: 380px;
+	max-width: 450px;
 	height: 100px;
 	display: inline-block;
+	font-size: 25px;
 }
+
 nav h1 {
 	color: white;
-	font-family: 'Montserrat Alternates', sans-serif;
+	font-family:'Montserrat', sans-serif;
 	margin-left: 72px;
-	padding-top: 35px;
+	padding-top: 50px;
 }
+
+
 /* Menú */
-ul {
+ul{
+	list-style: none;
 	float: right;
 	margin-right: 61px;
+	font-size: 20px;
 }
 
 ul li {
 	color: white;
 	display: block; 
-	font-family:'Montserrat Alternates', sans-serif;
+	font-family:'Montserrat', sans-serif;
 	float: right;
-	padding-top: 40px;
+	padding-top: 45px;
 	padding-left: 30px;	
 }
 
@@ -89,6 +95,7 @@ ul li {
 	font-size: 36px;
 }
 
+/* sección portafolio */
 #portfolio .container {
 	height: 850px;
 	padding-left: 55px;
@@ -110,10 +117,13 @@ ul li {
 	font-size: 36px ;
 }
 
+/* seccion About */
+
 #column{
 	height: 500px;
 	background-color: #28BB9C;
 	padding-top: 100px;
+	text-align: center;
 }
 
 .about {
@@ -125,10 +135,7 @@ ul li {
 	margin-bottom: 15px;
 	text-align: center
 }
-
-#column {
-	text-align: center;
-}
+/* texto en columna sección about */
 .left {
 	display: inline;
 	float: left;
@@ -145,7 +152,7 @@ ul li {
 	margin-bottom: 20px;
 	clear: both;
 }
-
+/* tipografia de parrafos de sección about */
 p.left , p.right {
 	font-family: 'Lato', sans-serif;
 	font-size: 20px;
@@ -155,7 +162,7 @@ p.left , p.right {
 	text-align: left;
 }
 
-
+/* boton download de seccion about: ; */
 .boton {
 	width: 180px;
 	height: 50px;
@@ -179,7 +186,7 @@ p.left , p.right {
 	color: white;
 	font-size: 15px;
 }
-
+/* icono estrella */
 .fa-star {
 	color: white;
 	font-size: 26px;
@@ -198,7 +205,7 @@ p.left , p.right {
 	display: inline-block;
 	background: #fff;
 }
-
+/* seccion de Contactos */
 #date {
 	width: 100%;
 	height: 570px;
@@ -211,19 +218,7 @@ p.left , p.right {
 	text-align: center;
 }
 
-/* .form * {
-	margin: 0 auto;
-	width: 100%;
-	display: inline;
-}
-
-.form {
-	width: 400px;
-    margin-top: 20px;
-	margin-left: auto;
-    margin-right: auto;
-    line-height: 3;
-} */
+/* Formulario */
 
 form {
 	margin: 0 auto;
@@ -261,7 +256,7 @@ form {
 	border-radius: 4px;
 }
 
-
+/* Pie de Pagina o Footer */
 footer {
 	width: 100%;
 	height: 342px;
@@ -297,9 +292,10 @@ footer {
 	font-size: 15px;
 	text-align: center;
 	display: inline-block;
+	margin-left: 50px;
 }
 
-.footer-column2 h3{
+.footer-column2 h3 {
 	font-family: 'Montserrat Alternates', sans-serif;
 	font-size: 28px;
 	margin-bottom: 70px;
@@ -317,4 +313,15 @@ footer {
 	font-size: 20px;
 	text-align: center;
 	display: inline-block;
+	margin-left: 50px;
+}
+
+.footer-column3 h3 {
+	font-family: 'Montserrat Alternates', sans-serif;
+	font-size: 28px;
+	margin-bottom: 38px;
+}
+
+.dif {
+	color: #23DC90 ;
 }
