@@ -63,7 +63,7 @@ nav h1 {
 	color: white;
 	font-family:'Montserrat', sans-serif;
 	margin-left: 72px;
-	padding-top: 50px;
+	padding-top: 30px;
 }
 
 
@@ -76,12 +76,22 @@ ul{
 }
 
 ul li {
-	color: white;
 	display: block; 
 	font-family:'Montserrat', sans-serif;
 	float: right;
 	padding-top: 45px;
 	padding-left: 30px;	
+}
+
+ul li a {
+	font-size: 16px;
+	text-transform: uppercase;
+	color: white;
+	text-decoration: none;
+}
+
+ul li a:hover {
+	color: #28BB9C;
 }
 
 /* Primera parte Section Start */
@@ -113,6 +123,10 @@ ul li {
 	margin: 5px;
 }
 
+.img {
+	padding-left: 45px;
+}
+
 #portfolio i {
 	font-size: 36px ;
 }
@@ -120,7 +134,7 @@ ul li {
 /* seccion About */
 
 #column{
-	height: 500px;
+	height: 580px;
 	background-color: #28BB9C;
 	padding-top: 100px;
 	text-align: center;
@@ -164,10 +178,10 @@ p.left , p.right {
 
 /* boton download de seccion about: ; */
 .boton {
-	width: 180px;
+	width: 210px;
 	height: 50px;
-	padding: 10px;
-	border: 1px solid white;
+	padding: 7px;
+	border: 1.5px solid white;
 	display: inline-block;
 	align-content: center;
 	margin-top: 20px;
@@ -177,9 +191,10 @@ p.left , p.right {
 .boton a {
 	margin-top: 5px;
 	font-family: 'Lato', sans-serif;
-	font-size: 15px;
+	font-size: 20px;
 	font-weight: 400;
 	color: white;
+	text-decoration: none;
 }
 
 .fa-download {
@@ -189,14 +204,32 @@ p.left , p.right {
 /* icono estrella */
 .fa-star {
 	color: white;
-	font-size: 26px;
+	font-size: 36px;
+}
+
+.stars {
+	margin: 20px 0px;
+}
+
+.blackstar {
+	margin: 20px 0px;
+	text-align: center;
+
+}
+
+.blackstar i {
+	color: black;
+	font-size: 36px;
 }
 
 .line1 {
 	width: 103px;
 	height: 5px;
 	display: inline-block;
-	background: #fff;	
+	background: #fff;
+	border: none;
+	margin-bottom: 10px;
+	margin-right: 9px;
 }
 
 .line2 {
@@ -204,6 +237,9 @@ p.left , p.right {
 	height: 5px;
 	display: inline-block;
 	background: #fff;
+	border: none;
+	margin-bottom: 10px;
+	margin-left: 9px;
 }
 /* seccion de Contactos */
 #date {
@@ -211,8 +247,12 @@ p.left , p.right {
 	height: 570px;
 	margin-bottom: 80px;
 }
+
+.blackstar hr {
+	background: black;
+}
+
 .titular {
-	
 	text-transform: uppercase;
 	margin-top: 112px;
 	text-align: center;
@@ -220,13 +260,25 @@ p.left , p.right {
 
 /* Formulario */
 
+#form {
+	margin-left: 300px;
+    width: 700px;
+}
+
 form {
 	margin: 0 auto;
 	float: left;
-	margin-left: 280px;
 	margin-top: 30px;
+	width: 100%;
 }
 
+form input, textarea {
+	width: 100%;
+}
+
+textarea#message {
+	height: 200px;
+}
 
 #name, #email, #phone, #message {
 	height: 50px;
@@ -241,18 +293,20 @@ form {
 }
 
 #name::placeholder, #email::placeholder, #phone::placeholder, #message::placeholder {
-	color: #C1BDBD;
+	color: #868E95;
 	font-weight: bold;
 	vertical-align: top;
 }
 
 #button {
-	max-width: 20%;
+	max-width: 11%;
+	margin-top: 20px;
+	font-size: 18px;
 	color: white;
 	font-weight: bold;
-	background-color: #23DC90;
+	background-color: #28BB9C;
 	border: none;
-	padding: 3px;
+	padding: 12px 3px;
 	border-radius: 4px;
 }
 
